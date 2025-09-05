@@ -43,7 +43,12 @@ sfdx force:org:list
 <li> You’ll see details like alias, username, org ID, instance URL, and expiration.</li>
 </ul>
 
-<img width="1398" height="317" alt="image" src="https://github.com/user-attachments/assets/2b387d99-0019-4169-bb9d-27feb6fb8570" />
+<details>
+  <summary>📌</summary>
+  <img width="1398" height="317" alt="image" src="https://github.com/user-attachments/assets/2b387d99-0019-4169-bb9d-27feb6fb8570" />
+ 
+</details>
+
 
 
 ## Show Org Details
