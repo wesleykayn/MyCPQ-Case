@@ -1,4 +1,6 @@
-# From your project root (where sfdx-project.json is), <br>
+## 1. Deploy the Changes
+
+## From your project root (where sfdx-project.json is), <br>
 ``` cmd
 sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10 
 ```
@@ -22,3 +24,32 @@ sf project deploy report --use-most-recent<br>
 ``` cmd
 sfdx force:apex:execute -f force-app/main/unpackaged/anon-apex/activateContracts.apex -u CPQ_SBX<br>
 ``` 
+________________________________________________________________________________________________________________
+
+## 2. Verify Org Connection in CLI
+
+Open your VS Code terminal and run:
+
+sf org list
+
+or (legacy):
+
+sfdx force:org:list
+
+List:
+If your sandbox alias (CPQ_SBX) appears in the list with a ✅, then VS Code (via Salesforce CLI) is connected to your sandbox.
+
+You’ll see details like alias, username, org ID, instance URL, and expiration.
+
+## Show Org Details
+
+Run:
+sf org display --target-org CPQ_SBX
+
+or:
+sfdx force:org:display -u CPQ_SBX
+
+
+text:
+This will print sandbox details (username, instance URL, connected status). If it errors, then the connection isn’t set up correctly.
+
