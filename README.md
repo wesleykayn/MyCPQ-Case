@@ -2,11 +2,12 @@
 ``` cmd
 sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10 
 ```
-<ul> 
-<li>`--source-dir force-app` → deploys everything in that folder (all your edits).</li>
-<li>`--target-org CPQ_SBX` → the alias you created earlier.</li>
-<li>`--wait 10` → wait up to 10 minutes for deployment to complete.</li>
+<ul>
+<li><code>--source-dir force-app</code> → deploys everything in that folder (all your edits).</li>
+<li><code>--target-org CPQ_SBX</code> → the alias you created earlier.</li>
+<li><code>--wait 10</code> → wait up to 10 minutes for deployment to complete.</li>
 </ul>
+
 
 ##Or deploy just the file(s) you changed:<br>
 ``` cmd
