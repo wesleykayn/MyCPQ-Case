@@ -1,4 +1,4 @@
-#From your project root (where sfdx-project.json is), <br>
+# From your project root (where sfdx-project.json is), <br>
 ``` cmd
 sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10 
 ```
@@ -9,16 +9,16 @@ sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10
 </ul>
 
 
-##Or deploy just the file(s) you changed:<br>
+## Or deploy just the file(s) you changed:<br>
 ``` cmd
 sf project deploy start --source-dir force-app/main/unpackaged/anon-apex/activateContracts.apex --target-org CPQ_SBX --wait 10  <br>
 ``` 
 
-##Verify Deployment<br>
+## Verify Deployment<br>
 ``` 
 sf project deploy report --use-most-recent<br>
 ``` 
-##Test Changes<br>
+## Test Changes<br>
 ``` cmd
 sfdx force:apex:execute -f force-app/main/unpackaged/anon-apex/activateContracts.apex -u CPQ_SBX<br>
 ``` 
