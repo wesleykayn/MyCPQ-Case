@@ -1,7 +1,7 @@
 ## 1. Deploy the Changes
 
 ## From your project root (where sfdx-project.json is), <br>
-``` bash
+``` cmd
 sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10 
 ```
 <ul>
