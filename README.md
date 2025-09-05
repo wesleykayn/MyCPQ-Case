@@ -21,8 +21,8 @@ sf project deploy start --source-dir force-app/main/unpackaged/anon-apex/activat
 ``` 
 
 ## Verify Deployment<br>
-``` 
-sf project deploy report --use-most-recent<br>
+``` cmd
+sf project deploy report --use-most-recent
 ``` 
 ## Test Changes<br>
 ``` cmd
