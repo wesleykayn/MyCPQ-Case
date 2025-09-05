@@ -9,7 +9,10 @@ sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10
 <li><code>--target-org CPQ_SBX</code> → the alias you created earlier.</li>
 <li><code>--wait 10</code> → wait up to 10 minutes for deployment to complete.</li>
 </ul>
-
+<details>
+  <summary>📌</summary>
+<img width="1442" height="641" alt="image" src="https://github.com/user-attachments/assets/8d5243e7-1d7f-423e-8be2-3f09cb27c066" />
+</details>details>
 
 ## Or deploy just the file(s) you changed:<br>
 ``` cmd
