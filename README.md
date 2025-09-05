@@ -1,6 +1,6 @@
 ## 1. Deploy the Changes
 
-## From your project root (where sfdx-project.json is), <br>
+### From your project root (where sfdx-project.json is), <br>
 ``` cmd
 sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10
 ```
@@ -15,7 +15,7 @@ sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10
 <tt>The following table reflects the changes.</tt>
 </details>
 
-## Or deploy just the file(s) you changed:<br>
+### Or deploy just the file(s) you changed:<br>
 ``` cmd
 sf project deploy start --source-dir force-app/main/unpackaged/anon-apex/activateContracts.apex --target-org CPQ_SBX --wait 10  
 ``` 
