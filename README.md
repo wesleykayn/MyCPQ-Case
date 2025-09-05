@@ -2,7 +2,7 @@
 
 ## From your project root (where sfdx-project.json is), <br>
 ``` cmd
-sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10 
+sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10
 ```
 <ul>
 <li><code>--source-dir force-app</code> → deploys everything in that folder (all your edits).</li>
