@@ -80,8 +80,5 @@ If it errors, then the connection isn’t set up correctly.
 
 ___________________________________________________________________________________________________________
 
+Steps: [CancelAndReplaceSteps.pdf](https://github.com/user-attachments/files/22176462/CancelAndReplaceSteps.pdf)
 
-
-DELL@DESKTOP-RDU8K9T MINGW64 /d/cancelAndReplace
-$ sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10 
-Error (InvalidProjectWorkspaceError): D:\cancelAndReplace does not contain a valid Salesforce DX project.
