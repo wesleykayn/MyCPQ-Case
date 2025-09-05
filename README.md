@@ -63,6 +63,11 @@ or:
 sfdx force:org:display -u CPQ_SBX
 
 ```
+<details>
+  <summary>📌</summary>
+⚠️ Warning: This command will expose sensitive information that allows for subsequent activity using your current authenticated session.
+Sharing this information is equivalent to logging someone in under the current credential, resulting in unintended access and escalation of privilege.
+</details>
 
-This will print sandbox details (username, instance URL, connected status).
+This will print sandbox details (username, instance URL, connected status). <br>
 If it errors, then the connection isn’t set up correctly.
