@@ -12,7 +12,8 @@ sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10
 <details>
   <summary>📌</summary>
 <img width="1442" height="641" alt="image" src="https://github.com/user-attachments/assets/92742c0c-28b2-429f-b861-638cb81414eb" />
-</details>details>
+<tt>The following table reflects the changes.</tt>
+</details>
 
 ## Or deploy just the file(s) you changed:<br>
 ``` cmd
