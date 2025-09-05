@@ -71,3 +71,12 @@ Sharing this information is equivalent to logging someone in under the current c
 
 This will print sandbox details (username, instance URL, connected status). <br>
 If it errors, then the connection isn’t set up correctly.
+
+
+___________________________________________________________________________________________________________
+
+
+
+DELL@DESKTOP-RDU8K9T MINGW64 /d/cancelAndReplace
+$ sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10 
+Error (InvalidProjectWorkspaceError): D:\cancelAndReplace does not contain a valid Salesforce DX project.
