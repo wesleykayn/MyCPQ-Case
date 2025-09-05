@@ -28,6 +28,7 @@ sf project deploy report --use-most-recent
 ``` cmd
 sfdx force:apex:execute -f force-app/main/unpackaged/anon-apex/activateContracts.apex -u CPQ_SBX
 ``` 
+<tt>Note change the class/component name: ` activateContracts.apex` </tt>
 ________________________________________________________________________________________________________________
 
 ## 2. Verify Org Connection in CLI
