@@ -4,6 +4,7 @@
 dir sfdx-project.json   
 ```
 
+Or Window: 
 ``` cmd
  ls sfdx-project.json
 ```
