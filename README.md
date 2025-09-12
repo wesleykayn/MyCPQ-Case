@@ -1,3 +1,18 @@
+
+# Are you in a project? This should list or cat a file
+``` cmd 
+dir sfdx-project.json   # (Windows) or: ls sfdx-project.json
+```
+# Is your org alias available?
+```cmd
+sf org list
+```
+# Who are you targeting by default?
+```cmd
+sf config get target-org
+```
+
+
 ## 1. Deploy the Changes
 
 ### From your project root (where sfdx-project.json is), <br>
@@ -90,4 +105,39 @@ $ sf project deploy start --source-dir force-app/main/default/lwc/activeContract
  »   Warning: @salesforce/cli update available from 2.104.6 to 2.105.6.
 Error (InvalidProjectWorkspaceError): D:\cancelAndReplace does not contain a valid Salesforce DX project.
 
+___________________________________________________________________________________________________________
+
+## 3. Deploy in the Root Repo
+
+## A) cd into the real project root, then deploy
+#### 1) Go to the folder that has sfdx-project.json
+cd /d/cancelAndReplace/cancelAndReplace
+
+#### 2) (optional) set default target org
+``` cmd
+sf config set target-org=CPQ_SBX
+```
+#### 3) Deploy just the LWC bundle (folder, not a single .js file)
+``` cmd
+sf project deploy start \
+  --source-dir force-app/main/default/lwc/activeContracts \
+  --target-org CPQ_SBX \
+  --ignore-conflicts \
+  --wait 10
+```
+ Tip: You can also deploy by metadata name:
+``` cmd
+sf project deploy start --metadata "LightningComponentBundle:activeContracts" --target-org CPQ_SBX --wait 10
+```
+## B) Stay in your current folder but point --project-dir to the root
+
+#### From: /d/cancelAndReplace
+``` cmd
+sf project deploy start \
+  --project-dir D:/cancelAndReplace/cancelAndReplace \
+  --source-dir force-app/main/default/lwc/activeContracts \
+  --target-org CPQ_SBX \
+  --ignore-conflicts \
+  --wait 10
+```
 
