@@ -1,13 +1,16 @@
 
-# Are you in a project? This should list or cat a file
+#### Are you in a project? This should list or cat a file
 ``` cmd 
-dir sfdx-project.json   # (Windows) or: ls sfdx-project.json
+dir sfdx-project.json   
 ```
-# Is your org alias available?
+``` cmd
+# (Windows) or: ls sfdx-project.json
+```
+#### Is your org alias available?
 ```cmd
 sf org list
 ```
-# Who are you targeting by default?
+#### Who are you targeting by default?
 ```cmd
 sf config get target-org
 ```
