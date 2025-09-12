@@ -3,8 +3,9 @@
 ``` cmd 
 dir sfdx-project.json   
 ```
+
 ``` cmd
-# (Windows) or: ls sfdx-project.json
+ ls sfdx-project.json
 ```
 #### Is your org alias available?
 ```cmd
