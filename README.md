@@ -103,6 +103,14 @@ cd /d/cancelAndReplace/cancelAndReplace
 ``` cmd
 sf config set target-org=CPQ_SBX
 ```
+<details>
+  <summary>📌</summary>
+ <img width="798" height="287" alt="image" src="https://github.com/user-attachments/assets/bbceed4f-2946-4d3b-9964-99bc95943e1c" />
+ 
+</details>
+
+
+
 #### 3) Deploy just the LWC bundle (folder, not a single .js file)
 ``` cmd
 sf project deploy start \
@@ -111,6 +119,14 @@ sf project deploy start \
   --ignore-conflicts \
   --wait 10
 ```
+<details>
+  <summary>📌</summary>
+  <img width="1397" height="787" alt="image" src="https://github.com/user-attachments/assets/0a5d6fb2-c530-482a-b2ab-0480e06afd20" />
+ 
+</details>
+
+
+
  Tip: You can also deploy by metadata name:
 ``` cmd
 sf project deploy start --metadata "LightningComponentBundle:activeContracts" --target-org CPQ_SBX --wait 10
