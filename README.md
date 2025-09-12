@@ -83,5 +83,11 @@ ________________________________________________________________________________
 GitHub: https://github.com/rjhalvorson/cancelAndReplace/blob/master/force-app/main/unpackaged/anon-apex/activateContracts.apex <br>
 Steps: [CancelAndReplaceSteps.pdf](https://github.com/user-attachments/files/22176462/CancelAndReplaceSteps.pdf)
 <br>
-changes: D:\cancelAndReplace\cancelAndReplace\force-app\main\default\lwc\activeContracts
+changes: D:\cancelAndReplace\cancelAndReplace\force-app\main\default\lwc\activeContracts <br>
+
+DELL@DESKTOP-RDU8K9T MINGW64 /d/cancelAndReplace
+$ sf project deploy start --source-dir force-app/main/default/lwc/activeContracts.js  --target-org CPQ_SBX --wait 10
+ »   Warning: @salesforce/cli update available from 2.104.6 to 2.105.6.
+Error (InvalidProjectWorkspaceError): D:\cancelAndReplace does not contain a valid Salesforce DX project.
+
 
