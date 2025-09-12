@@ -56,7 +56,7 @@ sfdx force:org:list
 
 
 
-## Show Org Details
+### Show Org Details
 
 Run:
 ```cmd
@@ -80,5 +80,8 @@ If it errors, then the connection isn’t set up correctly.
 
 ___________________________________________________________________________________________________________
 
+GitHub: https://github.com/rjhalvorson/cancelAndReplace/blob/master/force-app/main/unpackaged/anon-apex/activateContracts.apex <br>
 Steps: [CancelAndReplaceSteps.pdf](https://github.com/user-attachments/files/22176462/CancelAndReplaceSteps.pdf)
+<br>
+
 
