@@ -1,22 +1,4 @@
 
-#### Are you in a project? This should list or cat a file
-``` cmd 
-dir sfdx-project.json   
-```
-
-Or Window: 
-``` cmd
- ls sfdx-project.json
-```
-#### Is your org alias available?
-```cmd
-sf org list
-```
-#### Who are you targeting by default?
-```cmd
-sf config get target-org
-```
-
 
 ## 1. Deploy the Changes
 
@@ -105,10 +87,7 @@ Steps: [CancelAndReplaceSteps.pdf](https://github.com/user-attachments/files/221
 <br>
 changes: D:\cancelAndReplace\cancelAndReplace\force-app\main\default\lwc\activeContracts <br>
 
-DELL@DESKTOP-RDU8K9T MINGW64 /d/cancelAndReplace
-$ sf project deploy start --source-dir force-app/main/default/lwc/activeContracts.js  --target-org CPQ_SBX --wait 10
- »   Warning: @salesforce/cli update available from 2.104.6 to 2.105.6.
-Error (InvalidProjectWorkspaceError): D:\cancelAndReplace does not contain a valid Salesforce DX project.
+
 
 ___________________________________________________________________________________________________________
 
@@ -116,7 +95,9 @@ ________________________________________________________________________________
 
 ## A) cd into the real project root, then deploy
 #### 1) Go to the folder that has sfdx-project.json
-cd /d/cancelAndReplace/cancelAndReplace
+```cmd
+cd /d/cancelAndReplace/cancelAndReplace 
+```
 
 #### 2) (optional) set default target org
 ``` cmd
