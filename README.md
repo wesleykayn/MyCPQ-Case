@@ -159,6 +159,8 @@ Calls CPQ classes such as <code> ProductManager </code> and <code> QuoteCalculat
 Without a quote, opportunity, pricebook or quote lines there is nothing for CPQ to “amend,” and ProductManager.load(contractId) will fail.
 
 ___________________________________________________________________________________________
-step: [report_clean.pdf](https://github.com/user-attachments/files/22351008/report_clean.pdf)
+step
+PDF: [report_clean.pdf](https://github.com/user-attachments/files/22351008/report_clean.pdf)
+Word Docs: [report_highlight.docx](https://github.com/user-attachments/files/22351275/report_highlight.docx)
 
 ___________________________________________________________________________________________
