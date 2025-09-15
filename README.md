@@ -143,3 +143,17 @@ sf project deploy start \
   --wait 10
 ```
 
+
+________________________________________________________________________________________________
+
+## SO then what is the erroe?
+
+Queueable Job ==> AsyncAmendAndZero
+Calls CPQ classes such as ProductManager and QuoteCalculator to load/zero out the existing subscription line items.
+<ul> 
+ <ol> A Master quote (the quote that created the contract) with a start date and subscription term. </ol>
+ <ol> At least one subscription line (SBQQ_QuoteLine_c) tied to a pricebook product.
+</ul>
+
+Without a quote, opportunity, pricebook or quote lines there is nothing for CPQ to “amend,” and ProductManager.load(contractId) will fail.
+
