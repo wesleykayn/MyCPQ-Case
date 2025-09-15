@@ -146,7 +146,7 @@ sf project deploy start \
 
 ________________________________________________________________________________________________
 
-## SO then what is the erroe?
+## Where i am?
 
 #### Queueable Job ==> AsyncAmendAndZero <br>
 Calls CPQ classes such as ProductManager and QuoteCalculator to load/zero out the existing subscription line items.
