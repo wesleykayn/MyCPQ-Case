@@ -148,12 +148,13 @@ ________________________________________________________________________________
 
 ## SO then what is the erroe?
 
-Queueable Job ==> AsyncAmendAndZero
+#### Queueable Job ==> AsyncAmendAndZero <br>
 Calls CPQ classes such as ProductManager and QuoteCalculator to load/zero out the existing subscription line items.
-<ul> 
- <ol> A Master quote (the quote that created the contract) with a start date and subscription term. </ol>
- <ol> At least one subscription line (SBQQ_QuoteLine_c) tied to a pricebook product.
-</ul>
+<ol>
+  <li>A Master quote (the quote that created the contract) with a start date and subscription term.</li>
+  <li>At least one subscription line <code> (SBQQ_QuoteLine__c) </code>code> tied to a pricebook product.</li>
+</ol>
+
 
 Without a quote, opportunity, pricebook or quote lines there is nothing for CPQ to “amend,” and ProductManager.load(contractId) will fail.
 
