@@ -152,7 +152,7 @@ ________________________________________________________________________________
 Calls CPQ classes such as ProductManager and QuoteCalculator to load/zero out the existing subscription line items.
 <ol>
   <li>A Master quote (the quote that created the contract) with a start date and subscription term.</li>
-  <li>At least one subscription line <code> (SBQQ_QuoteLine__c) </code>code> tied to a pricebook product.</li>
+  <li>At least one subscription line <code>SBQQ_QuoteLine__c</code> tied to a pricebook product.</li>
 </ol>
 
 
