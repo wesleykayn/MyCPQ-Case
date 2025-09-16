@@ -164,3 +164,24 @@ PDF: [report_clean.pdf](https://github.com/user-attachments/files/22351008/repor
 Word Docs: [report_highlight.docx](https://github.com/user-attachments/files/22351275/report_highlight.docx)
 
 ___________________________________________________________________________________________
+
+## Load demo data to try it quickly
+
+The repo includes anonymous Apex seeders (if present in your clone) under:
+```cmd
+force-app/main/unpackaged/anon-apex/
+  loadQuotes.apex
+  placeOrders.apex
+  activateOrders.apex
+  contractQuotes.apex
+  activateContracts.apex
+```
+
+Run them one by one and wait for each job to finish (Setup → Apex Jobs) before the next:
+```cmd
+sfdx force:apex:execute -f force-app/main/unpackaged/anon-apex/loadQuotes.apex -u CPQ_ORG
+sfdx force:apex:execute -f force-app/main/unpackaged/anon-apex/placeOrders.apex -u CPQ_ORG
+sfdx force:apex:execute -f force-app/main/unpackaged/anon-apex/activateOrders.apex -u CPQ_ORG
+sfdx force:apex:execute -f force-app/main/unpackaged/anon-apex/contractQuotes.apex -u CPQ_ORG
+sfdx force:apex:execute -f force-app/main/unpackaged/anon-apex/activateContracts.apex -u CPQ_ORG
+```
