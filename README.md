@@ -6,6 +6,10 @@
 ``` cmd
 sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10
 ```
+```cmd
+sf project deploy start --source-dir force-app --target-org partialsb --wait 10
+```
+
 <ul>
 <li><code>--source-dir force-app</code> → deploys everything in that folder (all your edits).</li>
 <li><code>--target-org CPQ_SBX</code> → the alias you created earlier.</li>
