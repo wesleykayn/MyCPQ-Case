@@ -3,9 +3,11 @@
 ## 1. Deploy the Changes
 
 ### From your project root (where sfdx-project.json is), <br>
+sandbox: CPQ
 ``` cmd
 sf project deploy start --source-dir force-app --target-org CPQ_SBX --wait 10
 ```
+sandbox: Partialsb
 ```cmd
 sf project deploy start --source-dir force-app --target-org partialsb --wait 10
 ```
